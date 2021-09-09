@@ -1,0 +1,50 @@
+*
+    font-family: 'Poppins', sans-serif
+header
+    nav
+        .menu
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0
+            padding: 0
+            list-style-type: none
+            &-link
+                position: relative
+                font-weight: normal
+                font-size: 16px
+                color: #190C05
+                opacity: 0.4
+                &:hover
+                    color: #F6762C
+                    text-decoration: none
+                    &::before
+                        content: url('../icons/hover-icon.png')
+                        display: block
+                        position: absolute
+                        left: -20px
+                        top: 0
+    .buttons
+        display: flex
+        justify-content: space-around
+        &-item 
+            position: relative
+            font-weight: 500;
+            font-size: 16px;
+            color: #190C05
+            opacity: 0.6
+            &:hover
+                text-decoration: none
+                color: #FFFFFF
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 121px
+                    height: 54px
+                    background: linear-gradient(180deg, #F6762C 0%, #C65311 100%)
+                    border-radius: 10px
+                    z-index: -1
