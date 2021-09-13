@@ -1,6 +1,9 @@
 *
     font-family: 'Poppins', sans-serif
 header
+    position: absolute
+    top: 25px
+    width: 100%
     nav
         .menu
             display: flex
@@ -14,10 +17,11 @@ header
                 font-weight: normal
                 font-size: 16px
                 color: #190C05
-                opacity: 0.4
+                opacity: 0.5
                 &:hover
                     color: #F6762C
                     text-decoration: none
+                    opacity: 1
                     &::before
                         content: url('../icons/hover-icon.png')
                         display: block
@@ -32,7 +36,7 @@ header
             font-weight: 500;
             font-size: 16px;
             color: #190C05
-            opacity: 0.6
+            opacity: 0.7
             &:hover
                 text-decoration: none
                 color: #FFFFFF
@@ -48,3 +52,86 @@ header
                     background: linear-gradient(180deg, #F6762C 0%, #C65311 100%)
                     border-radius: 10px
                     z-index: -1
+
+.intro
+    background-color: #FFE6D9
+    background-image: url('../img/first-screen.png')
+    background-repeat: no-repeat
+    background-position: center right
+    height: 100vh
+    padding-top: 290px
+    padding-bottom: 81px
+.description
+    &-header
+        font-weight: 500
+        font-size: 16px
+        letter-spacing: 0.105em
+        text-transform: uppercase
+        color: #F6762C
+    &-title
+        margin-top: 17px
+        font-weight: bold
+        font-size: 49px
+        letter-spacing: 0.015em
+        color: #190C05
+        opacity: 0.8
+    &-text
+        margin: 0
+        margin-top: 30px
+        font-weight: normal
+        font-size: 18px
+        color: #190C05
+        opacity: 0.6
+    &-button 
+        display: inline-block
+        margin: 0
+        margin-top: 45px
+        padding: 15px 30px 
+        background: linear-gradient(180deg, #F6762C 0%, #C65311 100%)
+        border-radius: 10px
+        font-weight: 500
+        font-size: 16px
+        color: #FFFFFF
+        &:hover
+            text-decoration: none 
+            color: #FFFFFF
+        &__black
+            background: linear-gradient(180deg, #190C05 0%, rgba(25, 12, 5, 0.79) 100%)
+.about-us
+    padding-top: 110px
+    padding-bottom: 110px
+    &-img
+        width: 100% 
+.features 
+    .services
+        width: 100%
+        margin-top: 76px
+        &-icon
+            display: block
+            margin: 0 auto
+            width: 80px
+            height: 80px
+        &-title
+            margin-top: 25.2px
+            font-weight: 500
+            font-size: 25px
+            color: #190C05
+            opacity: 0.8
+        &-description
+            margin-top: 15px
+            font-weight: normal
+            font-size: 16px
+            color: #190C05
+            opacity: 0.7
+.app
+    margin-top: 310px
+    position: relative
+    &-img
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+
+
+            
+          
